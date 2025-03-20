@@ -1,0 +1,34 @@
+GET http://localhost:3000/contacts
+
+
+###Get request from mongodb
+GET https://cse-341-project1-6by5.onrender.com/contacts
+
+
+###post request from mongodb
+POST https://cse-341-project1-6by5.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Oriyomi",
+    "lastName": "Michael",
+    "email": "oriyo@testmail.com",
+    "favoriteColor": "Orange",
+    "birthday": "40"
+}
+
+
+###update request from mongodb
+PUT https://cse-341-project1-6by5.onrender.com/contacts/67d920838c97ed7209ddbaa7
+content-type: application/json
+
+{
+    "firstName": "Oriyomi",
+    "lastName": "Johnson",
+    "email": "johnjohn@testmail.com",
+    "favoriteColor": "Yellow",
+    "birthday": "71"
+}
+
+### Delete request from mongodb
+DELETE https://cse-341-project1-6by5.onrender.com/contacts/67d2421542fd21fa89be2150
